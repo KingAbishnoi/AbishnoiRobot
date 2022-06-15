@@ -442,7 +442,9 @@ def demote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status == "creator":
-        message.reply_text("ᴛʜɪꜱ ᴘᴇʀꜱᴏɴ **ᴄʀᴇᴀᴛᴇᴅ** ᴛʜᴇ ᴄʜᴀᴛ, ʜᴏᴡ ᴡᴏᴜʟᴅ ɪ ᴅᴇᴍᴏᴛᴇ ᴛʜᴇᴍ /n ᴋᴜꜱ ʙɪ?")
+        message.reply_text(
+            "ᴛʜɪꜱ ᴘᴇʀꜱᴏɴ **ᴄʀᴇᴀᴛᴇᴅ** ᴛʜᴇ ᴄʜᴀᴛ, ʜᴏᴡ ᴡᴏᴜʟᴅ ɪ ᴅᴇᴍᴏᴛᴇ ᴛʜᴇᴍ /n ᴋᴜꜱ ʙɪ?"
+        )
         return
 
     if not user_member.status == "administrator":
@@ -484,7 +486,7 @@ def demote(update: Update, context: CallbackContext) -> str:
     except BadRequest:
         message.reply_text(
             "ᴄᴏᴜʟᴅ ɴᴏᴛ ᴅᴇᴍᴏᴛᴇ. ɪ ᴍɪɢʜᴛ ɴᴏᴛ ʙᴇ ᴀᴅᴍɪɴ, ᴏʀ ᴛʜᴇ ᴀᴅᴍɪɴ ꜱᴛᴀᴛᴜꜱ ᴡᴀꜱ ᴀᴘᴘᴏɪɴᴛᴇᴅ ʙʏ ᴀɴᴏᴛʜᴇʀ"
-" ᴜꜱᴇʀ, ꜱᴏ ɪ ᴄᴀɴ'ᴛ ᴀᴄᴛ ᴜᴘᴏɴ ᴛʜᴇᴍ!",
+            " ᴜꜱᴇʀ, ꜱᴏ ɪ ᴄᴀɴ'ᴛ ᴀᴄᴛ ᴜᴘᴏɴ ᴛʜᴇᴍ!",
         )
         return
 
