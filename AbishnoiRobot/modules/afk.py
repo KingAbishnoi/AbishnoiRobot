@@ -111,7 +111,11 @@ def reply_afk(update: Update, context: CallbackContext):
             try:
                 chat = bot.get_chat(user_id)
             except BadRequest:
-                print("ᴇʀʀᴏʀ: ᴄᴏᴜʟᴅ ɴᴏᴛ ꜰᴇᴛᴄʜ ᴜꜱᴇʀɪᴅ {} ғᴏʀ ᴀғᴋ  AFK ᴍᴏᴅᴜʟᴇ".format(user_id))
+                print(
+                    "ᴇʀʀᴏʀ: ᴄᴏᴜʟᴅ ɴᴏᴛ ꜰᴇᴛᴄʜ ᴜꜱᴇʀɪᴅ {} ғᴏʀ ᴀғᴋ  AFK ᴍᴏᴅᴜʟᴇ".format(
+                        user_id
+                    )
+                )
                 return
             fst_name = chat.first_name
 
