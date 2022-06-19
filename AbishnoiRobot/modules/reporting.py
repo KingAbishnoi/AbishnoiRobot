@@ -49,7 +49,7 @@ def report_setting(update: Update, context: CallbackContext):
             if args[0] in ("yes", "on"):
                 sql.set_chat_setting(chat.id, True)
                 msg.reply_text(
-                   "Tᴜʀɴᴇᴅ ᴏɴ ʀᴇᴘᴏʀᴛɪɴɢ! Aᴅᴍɪɴs ᴡʜᴏ ʜᴀᴠᴇ ᴛᴜʀɴᴇᴅ ᴏɴ ʀᴇᴘᴏʀᴛs ᴡɪʟʟ ʙᴇ ɴᴏᴛɪғɪᴇᴅ ᴡʜᴇɴ /report  "
+                    "Tᴜʀɴᴇᴅ ᴏɴ ʀᴇᴘᴏʀᴛɪɴɢ! Aᴅᴍɪɴs ᴡʜᴏ ʜᴀᴠᴇ ᴛᴜʀɴᴇᴅ ᴏɴ ʀᴇᴘᴏʀᴛs ᴡɪʟʟ ʙᴇ ɴᴏᴛɪғɪᴇᴅ ᴡʜᴇɴ /report  "
                     "ᴏʀ @admin ɪs ᴄᴀʟʟᴇᴅ."
                 )
 

@@ -511,7 +511,7 @@ def list_locks(update, context):
         if update.effective_message.chat.type == "private":
             send_message(
                 update.effective_message,
-               " Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴍᴇᴀɴᴛ ᴛᴏ ᴜsᴇ ɪɴ ɢʀᴏᴜᴘ ɴᴏᴛ ɪɴ PM",
+                " Tʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴍᴇᴀɴᴛ ᴛᴏ ᴜsᴇ ɪɴ ɢʀᴏᴜᴘ ɴᴏᴛ ɪɴ PM",
             )
             return ""
         chat = update.effective_chat

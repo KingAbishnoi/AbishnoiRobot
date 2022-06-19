@@ -13,9 +13,9 @@ def totranslate(update: Update, context: CallbackContext) -> None:
     reply_msg = message.reply_to_message
     if not reply_msg:
         message.reply_text(
-           "Rᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇs ᴏʀ ᴡʀɪᴛᴇ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ᴏᴛʜᴇʀ ʟᴀɴɢᴜᴀɢᴇs ​​ғᴏʀ ᴛʀᴀɴsʟᴀᴛɪɴɢ ɪɴᴛᴏ ᴛʜᴇ ɪɴᴛᴇɴᴅᴇᴅ ʟᴀɴɢᴜᴀɢᴇ\n\n"
-            "Exᴀᴍᴘʟᴇ: `/tr  ᴇɴ-ʜɪ` ᴛᴏ ᴛʀᴀɴsʟᴀᴛᴇ ғʀᴏᴍ Eɴɢʟɪsʜ ᴛᴏ Hɪɴᴅɪ\n" 
-            "Oʀ ᴜsᴇ: `/tr ᴇɴ` ғᴏʀ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴅᴇᴛᴇᴄᴛɪᴏɴ ᴀɴᴅ ᴛʀᴀɴsʟᴀᴛɪɴɢ ɪᴛ ɪɴᴛᴏ ᴇɴɢʟɪsʜ.\n" 
+            "Rᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇs ᴏʀ ᴡʀɪᴛᴇ ᴍᴇssᴀɢᴇs ғʀᴏᴍ ᴏᴛʜᴇʀ ʟᴀɴɢᴜᴀɢᴇs ​​ғᴏʀ ᴛʀᴀɴsʟᴀᴛɪɴɢ ɪɴᴛᴏ ᴛʜᴇ ɪɴᴛᴇɴᴅᴇᴅ ʟᴀɴɢᴜᴀɢᴇ\n\n"
+            "Exᴀᴍᴘʟᴇ: `/tr  ᴇɴ-ʜɪ` ᴛᴏ ᴛʀᴀɴsʟᴀᴛᴇ ғʀᴏᴍ Eɴɢʟɪsʜ ᴛᴏ Hɪɴᴅɪ\n"
+            "Oʀ ᴜsᴇ: `/tr ᴇɴ` ғᴏʀ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴅᴇᴛᴇᴄᴛɪᴏɴ ᴀɴᴅ ᴛʀᴀɴsʟᴀᴛɪɴɢ ɪᴛ ɪɴᴛᴏ ᴇɴɢʟɪsʜ.\n"
             "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ [Lɪsᴛ ᴏғ ᴀᴠᴀɪʟᴀʙʟᴇ Lᴀɴɢᴜᴀɢᴇ Cᴏᴅᴇs](https://telegra.ph/ɪᴛs-ᴍᴇ-𒆜-Aʙɪsʜɴᴏɪ-06-15).",
             parse_mode="markdown",
             disable_web_page_preview=True,
