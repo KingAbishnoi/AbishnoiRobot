@@ -209,6 +209,4 @@ def get_lst_of_files(input_directory, output_lst):
     return output_lst
 
 
-
-
 __mod_name__ = "Zɪᴘᴘᴇʀ​"

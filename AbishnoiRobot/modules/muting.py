@@ -238,6 +238,7 @@ def temp_mute(update: Update, context: CallbackContext) -> str:
 
     return ""
 
+
 MUTE_HANDLER = CommandHandler("mute", mute)
 UNMUTE_HANDLER = CommandHandler("unmute", unmute)
 TEMPMUTE_HANDLER = CommandHandler(["tmute", "tempmute"], temp_mute)

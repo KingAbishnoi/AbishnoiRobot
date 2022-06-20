@@ -70,8 +70,6 @@ async def delete_messages(event):
     await event.client.delete_messages(chat, del_message)
 
 
-
-
 PURGE_HANDLER = purge_messages, events.NewMessage(pattern="^[!/]purge$")
 DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
 

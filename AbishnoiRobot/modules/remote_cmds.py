@@ -26,7 +26,7 @@ RBAN_ERRORS = {
 }
 
 RUNBAN_ERRORS = {
-   "Usᴇʀ ɪs ᴀɴ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ ᴏғ ᴛʜᴇ ᴄʜᴀᴛ",
+    "Usᴇʀ ɪs ᴀɴ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ ᴏғ ᴛʜᴇ ᴄʜᴀᴛ",
     "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ",
     "Nᴏᴛ ᴇɴᴏᴜɢʜ ʀɪɢʜᴛs ᴛᴏ ʀᴇsᴛʀɪᴄᴛ/ᴜɴʀᴇsᴛʀɪᴄᴛ ᴄʜᴀᴛ ᴍᴇᴍʙᴇʀ",
     "Usᴇʀ_ɴᴏᴛ_ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛ",
@@ -191,7 +191,7 @@ def runban(update: Update, context: CallbackContext):
     except BadRequest as excp:
         if excp.message == "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ":
             message.reply_text(
-               "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ! Mᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴀ ᴠᴀʟɪᴅ ᴄʜᴀᴛ ID ᴀɴᴅ I'ᴍ ᴘᴀʀᴛ ᴏғ ᴛʜᴀᴛ ᴄʜᴀᴛ."
+                "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ! Mᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴀ ᴠᴀʟɪᴅ ᴄʜᴀᴛ ID ᴀɴᴅ I'ᴍ ᴘᴀʀᴛ ᴏғ ᴛʜᴀᴛ ᴄʜᴀᴛ."
             )
             return
         else:
@@ -206,7 +206,7 @@ def runban(update: Update, context: CallbackContext):
         or not chat.get_member(bot.id).can_restrict_members
     ):
         message.reply_text(
-         "I ᴄᴀɴ'ᴛ ᴜɴʀᴇsᴛʀɪᴄᴛ ᴘᴇᴏᴘʟᴇ ᴛʜᴇʀᴇ! Mᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴜɴʙᴀɴ ᴜsᴇʀs."
+            "I ᴄᴀɴ'ᴛ ᴜɴʀᴇsᴛʀɪᴄᴛ ᴘᴇᴏᴘʟᴇ ᴛʜᴇʀᴇ! Mᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴜɴʙᴀɴ ᴜsᴇʀs."
         )
         return
 
@@ -276,7 +276,7 @@ def rkick(update: Update, context: CallbackContext):
     except BadRequest as excp:
         if excp.message == "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ":
             message.reply_text(
-               "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ! Mᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴀ ᴠᴀʟɪᴅ ᴄʜᴀᴛ ID ᴀɴᴅ I'ᴍ ᴘᴀʀᴛ ᴏғ ᴛʜᴀᴛ ᴄʜᴀᴛ."
+                "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ! Mᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴀ ᴠᴀʟɪᴅ ᴄʜᴀᴛ ID ᴀɴᴅ I'ᴍ ᴘᴀʀᴛ ᴏғ ᴛʜᴀᴛ ᴄʜᴀᴛ."
             )
             return
         else:
@@ -359,7 +359,7 @@ def rmute(update: Update, context: CallbackContext):
     except BadRequest as excp:
         if excp.message == "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ":
             message.reply_text(
-               "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ! Mᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴀ ᴠᴀʟɪᴅ ᴄʜᴀᴛ ID ᴀɴᴅ I'ᴍ ᴘᴀʀᴛ ᴏғ ᴛʜᴀᴛ ᴄʜᴀᴛ."
+                "Cʜᴀᴛ ɴᴏᴛ ғᴏᴜɴᴅ! Mᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ᴀ ᴠᴀʟɪᴅ ᴄʜᴀᴛ ID ᴀɴᴅ I'ᴍ ᴘᴀʀᴛ ᴏғ ᴛʜᴀᴛ ᴄʜᴀᴛ."
             )
             return
         else:
@@ -432,7 +432,7 @@ def runmute(update: Update, context: CallbackContext):
 
     if not user_id:
         message.reply_text(
-            "Yᴏᴜ ᴅᴏɴ'ᴛ sᴇᴇᴍ ᴛᴏ ʙᴇ ʀᴇғᴇʀʀɪɴɢ ᴛᴏ ᴀ ᴜsᴇʀ ᴏʀ ᴛʜᴇ ID sᴘᴇᴄɪғɪᴇᴅ ɪs ɪɴᴄᴏʀʀᴇᴄᴛ.." 
+            "Yᴏᴜ ᴅᴏɴ'ᴛ sᴇᴇᴍ ᴛᴏ ʙᴇ ʀᴇғᴇʀʀɪɴɢ ᴛᴏ ᴀ ᴜsᴇʀ ᴏʀ ᴛʜᴇ ID sᴘᴇᴄɪғɪᴇᴅ ɪs ɪɴᴄᴏʀʀᴇᴄᴛ.."
         )
         return
     elif not chat_id:
@@ -459,7 +459,7 @@ def runmute(update: Update, context: CallbackContext):
         or not chat.get_member(bot.id).can_restrict_members
     ):
         message.reply_text(
-           "I ᴄᴀɴ'ᴛ ᴜɴʀᴇsᴛʀɪᴄᴛ ᴘᴇᴏᴘʟᴇ ᴛʜᴇʀᴇ! Mᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴜɴʙᴀɴ ᴜsᴇʀs."
+            "I ᴄᴀɴ'ᴛ ᴜɴʀᴇsᴛʀɪᴄᴛ ᴘᴇᴏᴘʟᴇ ᴛʜᴇʀᴇ! Mᴀᴋᴇ sᴜʀᴇ I'ᴍ ᴀᴅᴍɪɴ ᴀɴᴅ ᴄᴀɴ ᴜɴʙᴀɴ ᴜsᴇʀs."
         )
         return
 

@@ -180,5 +180,4 @@ def config(client, message):
         )
 
 
-
 __mod_name__ = "Fᴏʀᴄᴇ-Sᴜʙ"

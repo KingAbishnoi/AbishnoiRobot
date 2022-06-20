@@ -22,5 +22,3 @@ async def handwriting(_, message):
 
 
 __mod_name__ = "Hᴀɴᴅᴡʀɪᴛᴇ"
-
-

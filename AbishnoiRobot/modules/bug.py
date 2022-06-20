@@ -119,4 +119,5 @@ async def close_send_photo(_, CallbackQuery):
     else:
         await CallbackQuery.message.delete()
 
+
 __mod_name__ = "Bᴜɢ"

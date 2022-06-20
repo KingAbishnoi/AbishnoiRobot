@@ -82,8 +82,6 @@ def markdown_help(update: Update, context: CallbackContext):
     markdown_help_sender(update)
 
 
-
-
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
 MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
 

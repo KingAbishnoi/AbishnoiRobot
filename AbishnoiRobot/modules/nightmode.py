@@ -68,7 +68,9 @@ openhehe = ChatBannedRights(
 async def close_ws(event):
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply("🤦🏻‍♂️Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ sᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ 🤦..")
+            await event.reply(
+                "🤦🏻‍♂️Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ sᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ 🤦.."
+            )
             return
 
     if not event.is_group:
@@ -79,14 +81,17 @@ async def close_ws(event):
         return
     add_nightmode(str(event.chat_id))
     await event.reply(
-        f"Aᴅᴅᴇᴅ ᴄʜᴀᴛ {event.chat.title} ᴡɪᴛʜ ɪᴅ  {event.chat_id} ᴛᴏ ᴅᴀᴛᴀʙᴀs . **Tʜɪs Gʀᴏᴜᴘ Wɪʟʟ Bᴇ Cʟᴏsᴇᴅ Oɴ 12Aᴍ(IST) Aɴᴅ Wɪʟʟ Oᴘᴇɴᴇᴅ Oɴ 06Aᴍ(IST)**" )
+        f"Aᴅᴅᴇᴅ ᴄʜᴀᴛ {event.chat.title} ᴡɪᴛʜ ɪᴅ  {event.chat_id} ᴛᴏ ᴅᴀᴛᴀʙᴀs . **Tʜɪs Gʀᴏᴜᴘ Wɪʟʟ Bᴇ Cʟᴏsᴇᴅ Oɴ 12Aᴍ(IST) Aɴᴅ Wɪʟʟ Oᴘᴇɴᴇᴅ Oɴ 06Aᴍ(IST)**"
+    )
 
 
 @register(pattern="^/rmnight")
 async def disable_ws(event):
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply("🤦🏻‍♂️Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ sᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ...🤦 ")
+            await event.reply(
+                "🤦🏻‍♂️Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ sᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ...🤦 "
+            )
             return
 
     if not event.is_group:
@@ -149,7 +154,6 @@ async def job_open():
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
 scheduler.add_job(job_open, trigger="cron", hour=6, minute=10)
 scheduler.start()
-
 
 
 __mod_name__ = "Nɪɢʜᴛ​"

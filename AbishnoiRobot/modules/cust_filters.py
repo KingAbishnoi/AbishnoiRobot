@@ -244,7 +244,9 @@ def stop_filter(update, context):
             chat_name = chat.title
 
     if len(args) < 2:
-        send_message(update.effective_message, "Wʜᴀᴛ sʜᴏᴜʟᴅ ɪ sᴛᴏᴘ? ||ɢɪᴠᴇ ғɪʟᴛᴇʀ ɴᴀᴍᴇ||")
+        send_message(
+            update.effective_message, "Wʜᴀᴛ sʜᴏᴜʟᴅ ɪ sᴛᴏᴘ? ||ɢɪᴠᴇ ғɪʟᴛᴇʀ ɴᴀᴍᴇ||"
+        )
         return
 
     chat_filters = sql.get_chat_triggers(chat_id)
@@ -258,7 +260,9 @@ def stop_filter(update, context):
             sql.remove_filter(chat_id, args[1])
             send_message(
                 update.effective_message,
-                "Oᴋᴀʏ ʙᴀʙʏ , I'ʟʟ sᴛᴏᴘ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴛʜᴀᴛ ғɪʟᴛᴇʀ ɪɴ *{}*.".format(chat_name),
+                "Oᴋᴀʏ ʙᴀʙʏ , I'ʟʟ sᴛᴏᴘ ʀᴇᴘʟʏɪɴɢ ᴛᴏ ᴛʜᴀᴛ ғɪʟᴛᴇʀ ɪɴ *{}*.".format(
+                    chat_name
+                ),
                 parse_mode=telegram.ParseMode.MARKDOWN,
             )
             raise DispatcherHandlerStop
@@ -586,7 +590,9 @@ def addnew_filter(update, chat_id, keyword, text, file_type, file_id, buttons):
     msg = update.effective_message
     totalfilt = sql.get_chat_triggers(chat_id)
     if len(totalfilt) >= 150:  # Idk why i made this like function....
-        msg.reply_text("Tʜɪs ɢʀᴏᴜᴘ ʜᴀs ʀᴇᴀᴄʜᴇᴅ ɪᴛs ᴍᴀx ғɪʟᴛᴇʀs ʟɪᴍɪᴛ ᴏғ 150.\n ɴᴇᴇᴅ ᴍᴏʀᴇ ɢᴏ ʜᴇᴀʀ @Abishnoi_bots")
+        msg.reply_text(
+            "Tʜɪs ɢʀᴏᴜᴘ ʜᴀs ʀᴇᴀᴄʜᴇᴅ ɪᴛs ᴍᴀx ғɪʟᴛᴇʀs ʟɪᴍɪᴛ ᴏғ 150.\n ɴᴇᴇᴅ ᴍᴏʀᴇ ɢᴏ ʜᴇᴀʀ @Abishnoi_bots"
+        )
         return False
     else:
         sql.new_add_filter(chat_id, keyword, text, file_type, file_id, buttons)
@@ -611,10 +617,6 @@ def __migrate__(old_chat_id, new_chat_id):
 def __chat_settings__(chat_id, user_id):
     cust_filters = sql.get_chat_triggers(chat_id)
     return "Tʜᴇʀᴇ ᴀʀᴇ `{}` ᴄᴜsᴛᴏᴍ Fɪʟᴛᴇʀs ʜᴇʀᴇ .".format(len(cust_filters))
-
-
-
-
 
 
 FILTER_HANDLER = CommandHandler("filter", filters)
@@ -643,4 +645,3 @@ __handlers__ = [
     LIST_HANDLER,
     (CUST_FILTER_HANDLER, HANDLER_GROUP, RMALLFILTER_HANDLER),
 ]
-

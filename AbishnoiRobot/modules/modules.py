@@ -155,7 +155,8 @@ def unload(update: Update, context: CallbackContext):
         USER_SETTINGS.pop(imported_module.__mod_name__.lower())
 
     unload_messasge.edit_text(
-        f"Sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʟᴏᴀᴅᴇᴅ ᴍᴏᴅᴜʟᴇ , ᴀʙ ᴊᴀ ᴏʀ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ @Abishnoi_bots : <b>{text}</b>", parse_mode=ParseMode.HTML
+        f"Sᴜᴄᴄᴇssғᴜʟʟʏ ᴜɴʟᴏᴀᴅᴇᴅ ᴍᴏᴅᴜʟᴇ , ᴀʙ ᴊᴀ ᴏʀ ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ @Abishnoi_bots : <b>{text}</b>",
+        parse_mode=ParseMode.HTML,
     )
 
 

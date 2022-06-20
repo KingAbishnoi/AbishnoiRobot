@@ -449,8 +449,6 @@ def __stats__():
     )
 
 
-
-
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
     "blacklist", blacklist, pass_args=True, admin_ok=True
 )

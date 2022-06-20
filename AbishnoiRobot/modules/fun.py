@@ -324,8 +324,6 @@ def weebify(update: Update, context: CallbackContext):
         message.reply_text(string)
 
 
-
-
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)

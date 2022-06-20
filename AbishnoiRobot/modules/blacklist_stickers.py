@@ -494,10 +494,6 @@ def __stats__():
     )
 
 
-
-
-
-
 BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
     "blsticker", blackliststicker, admin_ok=True
 )

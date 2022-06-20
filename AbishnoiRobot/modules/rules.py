@@ -153,8 +153,6 @@ def __chat_settings__(chat_id, user_id):
     return f"Tʜɪs ᴄʜᴀᴛ ʜᴀs ʜᴀᴅ ɪᴛ's ʀᴜʟᴇs sᴇᴛ: `{bool(sql.get_rules(chat_id))}`"
 
 
-
-
 __mod_name__ = "Rᴜʟᴇᴍᴀɪɴ"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules)

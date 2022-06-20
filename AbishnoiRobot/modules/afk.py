@@ -1,5 +1,5 @@
-#thanks Fallen Robot 🤖
-#AbishnoiRobot 
+# thanks Fallen Robot 🤖
+# AbishnoiRobot
 
 import re
 import time
@@ -378,8 +378,6 @@ async def chat_watcher_func(_, message):
             return await message.reply_text(msg, disable_web_page_preview=True)
         except:
             return
-
-
 
 
 __mod_name__ = "Aғᴋ"

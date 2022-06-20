@@ -298,4 +298,3 @@ async def lego(event):
 
 
 __mod_name__ = "Lᴏɢᴏᴍᴀɪɴ"
-
