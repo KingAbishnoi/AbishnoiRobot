@@ -35,6 +35,4 @@ async def _(event):
         await event.reply("I ᴄᴀɴ'ᴛ ғɪɴᴅ ᴛʜᴀᴛ")
 
 
-
-
 __mod_name__ = "Gᴘs"

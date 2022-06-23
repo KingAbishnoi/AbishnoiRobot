@@ -29,12 +29,11 @@ async def repo(client, message):
                 [
                     InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/Abishnoi1M"),
                     InlineKeyboardButton(
-                        "ʀᴏʙᴏᴛ",
-                        url="https://github.com/KingAbishnoi/AbishnoiRobot"),
+                        "ʀᴏʙᴏᴛ", url="https://github.com/KingAbishnoi/AbishnoiRobot"
+                    ),
                     InlineKeyboardButton(
                         "ᴍᴜsɪᴄ",
-                        url="https://github.com/KingAbishnoi/AbishnoiXMusic",  
-                     
+                        url="https://github.com/KingAbishnoi/AbishnoiXMusic",
                     ),
                 ]
             ]

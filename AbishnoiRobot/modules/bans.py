@@ -400,7 +400,6 @@ def selfunban(context: CallbackContext, update: Update) -> str:
     return log
 
 
-
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban)
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban)
 KICK_HANDLER = CommandHandler("kick", kick)

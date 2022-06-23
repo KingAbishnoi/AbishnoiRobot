@@ -36,7 +36,7 @@ async def _(event):
         tts.save("k.mp3")
     except AssertionError:
         await event.reply(
-           "Tʜᴇ ᴛᴇxᴛ ɪs ᴇᴍᴘᴛʏ.\n"
+            "Tʜᴇ ᴛᴇxᴛ ɪs ᴇᴍᴘᴛʏ.\n"
             "Nᴏᴛʜɪɴɢ ʟᴇғᴛ ᴛᴏ sᴘᴇᴀᴋ ᴀғᴛᴇʀ ᴘʀᴇ-ᴘʀᴇᴄᴇssɪɴɢ, "
             "ᴛᴏᴋᴇɴɪᴢɪɴɢ ᴀɴᴅ ᴄʟᴇᴀɴɪɴɢ."
         )
@@ -55,7 +55,6 @@ async def _(event):
             event.chat_id, "k.mp3", voice_note=True, reply_to=reply_to_id
         )
         os.remove("k.mp3")
-
 
 
 __mod_name__ = "ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ"

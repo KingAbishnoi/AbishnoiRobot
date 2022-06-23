@@ -83,7 +83,7 @@ def set_blue_text_must_click(update: Update, context: CallbackContext):
             message.reply_text(reply, parse_mode=ParseMode.HTML)
 
         elif val in ("yes", "on"):
-            sql.set_cleanbt(chat.id, True) 
+            sql.set_cleanbt(chat.id, True)
             reply = "Bʟᴜᴇᴛᴇxᴛ ᴄʟᴇᴀɴɪɴɢ ʜᴀs ʙᴇᴇɴ ᴅɪsᴀʙʟᴇᴅ ғᴏʀ <b>{}</b>".format(
                 html.escape(chat.title)
             )
@@ -218,8 +218,6 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
 
     message.reply_text(text, parse_mode=ParseMode.HTML)
     return
-
-
 
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanblue", set_blue_text_must_click)

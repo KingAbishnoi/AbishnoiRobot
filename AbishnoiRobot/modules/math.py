@@ -112,8 +112,6 @@ def log(update: Update, context: CallbackContext):
     message.reply_text(math.log(int(args[0])))
 
 
-
-
 __mod_name__ = "Mᴀᴛʜs"
 
 SIMPLIFY_HANDLER = DisableAbleCommandHandler("math", simplify)

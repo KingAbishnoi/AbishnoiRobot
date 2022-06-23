@@ -89,6 +89,4 @@ async def _(event):
             await event.reply(file=out_file)
 
 
-
-
 __mod_name__ = "Wᴇᴀᴛʜᴇʀ"

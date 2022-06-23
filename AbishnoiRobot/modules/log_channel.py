@@ -192,8 +192,6 @@ if is_module_loaded(FILENAME):
             return f"Tʜɪs ɢʀᴏᴜᴘ ʜᴀs ᴀʟʟ ɪᴛ's ʟᴏɢs sᴇɴᴛ ᴛᴏ: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
         return "Nᴏ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ɪs sᴇᴛ ғᴏʀ ᴛʜɪs ɢʀᴏᴜᴘ!"
 
-
-
     __mod_name__ = "Lᴏɢs​"
 
     LOG_HANDLER = CommandHandler("logchannel", logging)

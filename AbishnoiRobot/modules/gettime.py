@@ -91,7 +91,6 @@ def gettime(update: Update, context: CallbackContext):
     )
 
 
-
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 
 dispatcher.add_handler(TIME_HANDLER)

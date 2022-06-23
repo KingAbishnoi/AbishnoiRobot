@@ -504,7 +504,6 @@ def __user_info__(user_id):
     return result
 
 
-
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
 GET_BIO_HANDLER = DisableAbleCommandHandler("bio", about_bio)
 

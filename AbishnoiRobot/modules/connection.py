@@ -386,8 +386,6 @@ def connect_button(update, context):
         connect_chat(update, context)
 
 
-
-
 CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, pass_args=True)
 CONNECTION_CHAT_HANDLER = CommandHandler("connection", connection_chat)
 DISCONNECT_CHAT_HANDLER = CommandHandler("disconnect", disconnect_chat)

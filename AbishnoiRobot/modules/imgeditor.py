@@ -1,5 +1,3 @@
-
-
 from pyrogram import filters
 from pyrogram.types import (
     CallbackQuery,
@@ -157,9 +155,7 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(text="Normal", callback_data="stkr"),
-                            InlineKeyboardButton(
-                                text="ᴇᴅɢᴇ", callback_data="cur_ved"
-                            ),
+                            InlineKeyboardButton(text="ᴇᴅɢᴇ", callback_data="cur_ved"),
                         ],
                         [
                             InlineKeyboardButton(
@@ -289,14 +285,10 @@ async def cb_handler(client: pbot, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton(text="ʀᴇᴅ", callback_data="red"),
-                            InlineKeyboardButton(
-                                text="ɢʀᴇᴇɴ", callback_data="green"
-                            ),
+                            InlineKeyboardButton(text="ɢʀᴇᴇɴ", callback_data="green"),
                         ],
                         [
-                            InlineKeyboardButton(
-                                text="ʙʟᴀᴄᴋ", callback_data="black"
-                            ),
+                            InlineKeyboardButton(text="ʙʟᴀᴄᴋ", callback_data="black"),
                             InlineKeyboardButton(text="ʙʟᴜᴇ", callback_data="blue"),
                         ],
                     ]

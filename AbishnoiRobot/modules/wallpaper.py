@@ -59,5 +59,3 @@ WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall)
 dispatcher.add_handler(WALLPAPER_HANDLER)
 
 __mod_name__ = "Wᴀʟʟᴘᴀᴘᴇʀ"
-
-

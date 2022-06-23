@@ -80,4 +80,5 @@ async def _(event):
     got = net.replace("'", "")
     await event.reply(got)
 
+
 __mod_name__ = "English"

@@ -1,4 +1,3 @@
-
 import requests
 
 url = "https://iamai.p.rapidapi.com/ask"

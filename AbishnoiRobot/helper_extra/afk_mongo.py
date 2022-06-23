@@ -28,4 +28,3 @@ async def get_afk_users() -> list:
     for user in users.to_list(length=1000000000):
         users_list.append(user)
     return users_list
-

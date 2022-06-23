@@ -474,8 +474,6 @@ def lined(update, context):
         message.reply_text(string)
 
 
-
-
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble)
 FBUBBLE_HANDLER = DisableAbleCommandHandler("fbubble", fbubble)
