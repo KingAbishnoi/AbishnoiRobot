@@ -1,3 +1,10 @@
+# Dear Pro  , Don't Remove This Link 
+#. Tg @Abishnoi1M
+# All Bots @Abishnoi_bots
+#Github :- KingAbishnoi
+
+
+
 import asyncio
 from pyrogram import filters
 from pyrogram.types import (
